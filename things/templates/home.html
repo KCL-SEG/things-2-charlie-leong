@@ -6,6 +6,11 @@
   <h1>
     Things
   </h1>
+  <form action="{ url 'thing_s'% }" method='get'>
+      { %csrf_token% }
+      { { form.as_p } }
+      <input type='submit' value='enter'>
+  </form>
   <p>Some stuff about things goes here.</p>
 </body>
 </html>
